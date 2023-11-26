@@ -8,7 +8,12 @@ class SearchBar extends React.Component{
 
 handleChange = (event) => this.setState  ({searchTerm: event.target.value});
 handleSubmit = () => {
-    const { searchTerm } = this.state;
+     const { searchTerm } = this.state;
+    const { onFormSubmit } = this.props;
+
+    onFormSubmit(searchTerm);
+
+    event.preventDefault();
   
 }
     render(){
