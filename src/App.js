@@ -6,6 +6,19 @@ import {SearchBar, VideoDetails} from './components';
 
 
 class App extends React.Component {
+     handeleSubmit = async (searchTerm) =>
+    {
+        const response = await youtube.get('search',{
+            params:{
+                part: 'snippet',
+                maxResults: 5 ,
+                key: 'AIzaSyDUzMXRxM-mW0xDNhHVC49g5yZ6DwjOu7U',
+                q: searchTerm,
+    
+            }
+        });
+
+    }
     render(){
         return (
             <Grid container spacing = {16}>
