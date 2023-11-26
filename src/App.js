@@ -13,7 +13,7 @@ class App extends React.Component {
                     <Grid constainer spacing = {16}>
                     <Grid item xs={12}>     
                         {/* Search bar Componet  */}
-                        <SearchBar /> 
+                        <SearchBar  onFormSubmit={this.handeleSubmit}/> 
                         
                     </Grid>
                     <Grid item xs = {8}>
