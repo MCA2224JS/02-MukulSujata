@@ -1,8 +1,10 @@
 import React from 'react'
+
 import React from 'react';
 import {Paper, Typography} from '@material-ui/core';
 
 const VideoDetails = () => {
+
 const VideoDetails = ({video}) => {
   if (!video) return <div> Loading ...</div>
   console.log(video);
@@ -23,4 +25,4 @@ const VideoDetails = ({video}) => {
   )
 }
 
-export default VideoDetails
+export default VideoDetailsexport default VideoDetails;
